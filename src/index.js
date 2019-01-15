@@ -9,10 +9,9 @@
           json = filterPokemon(json)
         }
         pokeContainer.innerHTML = ''
-        json.forEach((pokemon_hash) => insertPokemon(pokemon_hash))
-      });
-    }
-
+        json.forEach((pokemon) => insertPokemon(pokemon))
+    });
+  }
 
   function filterPokemon(array) {
     return array.filter((pokemon) => {
@@ -33,7 +32,6 @@
         </div>
       </div>
     </div>`
-
   }
 
   function changeImage(id) {
